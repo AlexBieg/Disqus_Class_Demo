@@ -2,15 +2,14 @@
 var ACCESS_TOKEN =  
 
 // Enter API Key
-var API_KEY = // Enter API Key here
+var API_KEY = 
 
-// create angular app
+// creates the angular app
 var myApp = angular.module('myApp', []);
 
 
 
 myApp.controller('myCtrl', function($scope, $http) {
-  $scope.name = "stuff";
   $scope.posts = {};
 
   $http.get('https://disqus.com/api/3.0/forums/listPosts.json', {
